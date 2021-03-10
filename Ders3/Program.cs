@@ -13,18 +13,31 @@ namespace Ders3
             list.Add(24);//hem int 
             list.Add("Babayev");
             list.Add(true);//hem bool tiplerinde yeni butun tiplerde ddeyer ala bilir ve
-                           //adi arrayden ferqli olaraq uzunluqlari olmur
+            //adi arrayden ferqli olaraq uzunluqlari olmur
 
             list.ShowConsole();
-            list.AddIftixar();
-            
+            Console.WriteLine(list.Count) ;
 
+            list.Capasite(6);
+            list.AddIftixar("salam");
+            list.AddIftixar(24);
+            list.AddIftixar(36);
+            list.ShowConsole();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("**********************************");
 
             MyArrayList arrayList = new MyArrayList(3);
             arrayList.Add("salam");
             arrayList.Add("Iftixar");
             arrayList.Add("Babayev");
+            arrayList.AddIftixar("salam");
+            arrayList.ShowMyArrayLst();
             
+
 
 
         }

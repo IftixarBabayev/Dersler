@@ -18,10 +18,15 @@ namespace Ders3
                 Console.WriteLine(item);
             }
         }
-        private static int index = 0;
+        private static int index ;
         private static object[] mass;
-
-        public static int AddIftixar(this object value)
+        public static void Capasite(this object arraylist, int cap)
+        {
+            mass = new object[cap];
+            index = 0;
+            
+        }
+        public static int AddIftixar(this object array,object value)
         {
             mass[index] = value;
             index++;

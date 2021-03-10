@@ -8,6 +8,8 @@ namespace Ders3
 {
    public  class MyArrayList
     {
+
+
         private object[] mass;
         private int index;
 
@@ -16,6 +18,7 @@ namespace Ders3
             mass = new object[cap] ;
             index = 0;
         }
+        
         public int Add(object value)
         {
             
@@ -28,6 +31,22 @@ namespace Ders3
             foreach (var item in mass)
             {
                 Console.WriteLine(item);
+            }
+        }
+        public int MyCount
+        {
+
+            get
+            {
+                int count = 0;
+                foreach (var item in mass)
+                {
+                    if (mass != null)
+                    {
+                        count++;
+                    }
+                }
+                return count;
             }
         }
     }
